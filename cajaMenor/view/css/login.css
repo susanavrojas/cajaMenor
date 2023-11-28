@@ -1,0 +1,322 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: arial;
+   background-image: url("../img/fondo.png");
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   height: 100vh;
+   width: 100%;
+}
+
+/* .contenedor-icon svg {
+  width: 20px;
+} */
+/* .contenedor-icon .bi bi-person-circle {
+  width: 15px;
+} */
+.form-login {
+   width: 400px;
+   height: 425px;
+
+   margin: auto;
+   margin-top: 180px;
+   box-shadow: 7px 13px 37px #000;
+   padding: 20px 30px;
+
+   color: white;
+   border-radius: 40px;
+}
+
+.form-login h5 {
+   margin: 0;
+   text-align: center;
+   height: 40px;
+   margin-bottom: 30px;
+
+   font-size: 20px;
+   font-family: "Playfair Display", serif;
+}
+
+.controls {
+   width: 100%;
+   border: 1px solid #017bab;
+   margin-bottom: 15px;
+   padding: 11px 10px;
+
+   font-size: 14px;
+   font-weight: bold;
+   border-radius: 13px;
+   font-family: "Playfair Display", serif;
+   background-color: #fff8dc;
+   border: 1px solid #008b8b;
+   color: #181717;
+}
+
+.controls::placeholder {
+   color: black;
+}
+
+.buttons {
+   width: 50%;
+   height: 40px;
+   background: #008b8b;
+   border: none;
+   color: white;
+   margin-bottom: 16px;
+   cursor: pointer;
+   transition: ease-in-out 0.5s;
+   font-family: "Playfair Display", serif;
+   margin-left: 85px;
+   border-radius: 12px;
+}
+
+.buttons:hover {
+   background: #02597c;
+   border: 1px solid white;
+}
+
+.form-login p {
+   height: 40px;
+   text-align: center;
+   border-bottom: 1px solid;
+   font-family: "Playfair Display", serif;
+}
+
+.form-login a {
+   font-family: "Playfair Display", serif;
+   color: black;
+}
+
+.form-login a:hover {
+   color: white;
+   text-decoration: none;
+   font-size: 14px;
+}
+
+.form-login a:hover {
+   text-decoration: underline;
+}
+
+.panel,
+.spinner {
+   width: 100%;
+   height: 130vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: none;
+   background-image: url("../img/logo.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+}
+
+.panel header {
+   width: 100%;
+   height: 8%;
+   background-color: #2f4f4f;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   flex-direction: row;
+}
+
+.panel header button {
+   margin-right: 10px;
+   width: 150px;
+   height: 23px;
+   background-color: #fffff0;
+   border: 0;
+   border-radius: 10px;
+   font-size: 16px;
+   font-family: "Playfair Display", serif;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.panel .agregarTope {
+   width: 100%;
+   height: 8%;
+   background-color: #a9a9a9;
+   border-top: 5px, solid;
+   display: flex;
+   align-items: center;
+}
+.panel .agregarTope input {
+   margin-left: 10px;
+   border-radius: 10px;
+   height: 24px;
+   margin-bottom: 5px;
+   border: 0;
+   width: 135px;
+   background-color: #fffff0;
+}
+.panel .agregarTope label {
+   margin-left: 1%;
+   font-size: 18px;
+   font-family: "Playfair Display", serif;
+}
+.panel .agregarTope button {
+   margin-left: 13px;
+   width: 85px;
+   height: 24px;
+   font-size: 16px;
+   border: 0;
+   border-radius: 10px;
+   font-family: "Playfair Display", serif;
+   margin-bottom: 5px;
+}
+.panel .agregarTope p {
+   margin-left: 4%;
+   margin-top: 1%;
+   font-size: 18px;
+   font-family: "Playfair Display", serif;
+}
+
+.agregarTope svg {
+   margin-left: 10px;
+}
+.panel div section {
+   width: 100%;
+   height: 100vh;
+   position: absolute;
+   display: flex;
+}
+
+.panel .sectionRegistro form {
+   width: 100%;
+   height: 130vh;
+   position: absolute;
+   top: 0;
+   left: 0;
+   display: none;
+   background-image: url("../img/imagenRegistrar.png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   object-fit: contain;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.panel .sectionRegistro form h3 {
+   margin-top: 105px;
+   text-align: center;
+   font-size: 35px;
+   font-family: "Playfair Display", serif;
+}
+
+.selectCategoria {
+   margin-top: 58px;
+   font-family: "Playfair Display", serif;
+   font-size: 15px;
+}
+.panel .sectionBuscar {
+   width: 100%;
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   object-fit: contain;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-image: url("../img/imagenRegistrar.png");
+}
+.seleccionec {
+   margin-top: 45px;
+   margin-right: 47px;
+}
+.panel .sectionListar {
+   width: 100%;
+   height: 100%;
+   background-color: #dfdfdf;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   background-image: url("../img/fondo\ \(2\).png");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   object-fit: contain;
+}
+
+.cardDos {
+   width: 231px;
+   height: 158px;
+   background-color: #fffff0;
+   display: flex;
+   flex-direction: column;
+   justify-content: initial;
+   align-items: center;
+   margin-bottom: 50px;
+   margin-top: 14px;
+   border-radius: 10%;
+}
+
+button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+   cursor: pointer;
+}
+
+button svg {
+   margin-right: 8px;
+}
+
+.contenedor-registrar {
+   width: 100%;
+}
+
+.categoria {
+   border-radius: 5px;
+   width: 22%;
+}
+
+input {
+   border-radius: 5px;
+   width: 22%;
+   text-decoration: #000;
+}
+
+::placeholder {
+   color: #000;
+}
+
+.description ::placeholder {
+   color: #000;
+}
+.buscar-select {
+   height: 29px;
+   margin-top: 10px;
+   width: 242px;
+   border-radius: 15px;
+}
+
+.button-buscar {
+   height: 33px;
+   margin-top: 8px;
+   border-radius: 12px;
+   width: 10%;
+   font-family: "Playfair Display", serif;
+}
+
+.butonGuardar {
+   height: 4%;
+   width: 11%;
+   margin-top: 25px;
+   border-radius: 14px;
+   font-family: "Playfair Display", serif;
+}
+.topem {
+   margin-left: 5px;
+}
